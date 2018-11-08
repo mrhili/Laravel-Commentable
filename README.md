@@ -66,6 +66,15 @@ $comment = $post->comment([
 dd($comment);
 ```
 
+### Get the creator name
+``` php
+$post = Post::first();
+
+
+dd ($post->creator->name );
+
+```
+
 ### Update a comment
 ``` php
 $comment = $post->updateComment(1, [
